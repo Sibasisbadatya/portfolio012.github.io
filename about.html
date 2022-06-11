@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            background-color: black;
+            box-shadow: 2px 2px 6px burlywood;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        li {
+
+            font-size: 2rem;
+            padding: 1rem;
+            list-style-type: none;
+            margin-right: 3%;
+            border-right: 1px solid orange;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        body {
+           background-image: linear-gradient(to right,black,yellow);
+        }
+
+        .about {
+            color: aqua;
+            font-size: 4rem;
+            text-shadow: 3px 2px 2px black;
+            text-align: center;
+        }
+
+        h2 {
+            color: aquamarine;
+            font-size: 6rem;
+            text-shadow: 3px 2px 2px black;
+            margin: 2%;
+        }
+
+        .education {
+            background-color: darkblue;
+            width: 90vw;
+            height: 60vh;
+            margin: 1%;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 4px 2px 6px black;
+            border-radius: 15px;
+
+
+        }
+
+        hr {
+            color: bisque;
+        }
+
+        .vssut {
+            height: 50%;
+            width: 30%;
+            top: 0%;
+            float: left;
+            margin: 1%;
+
+
+        }
+
+        .jnv12 {
+            height: 50%;
+            width: 30%;
+            top: 0%;
+            margin: 1%;
+
+        }
+
+        .jnv10 {
+            height: 50%;
+            width: 30%;
+            top: 0%;
+            float: right;
+            margin: 1%;
+        }
+
+        .jnv10img {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+
+        }
+
+        .jnv12img {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+
+        }
+
+        .vssutimg {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        h3 {
+            font-size: 4rem;
+            color: chartreuse;
+            text-shadow: 4px 2px 6px black;
+        }
+
+        @media only screen and (max-width:1200px) {
+            .about {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 5rem;
+            }
+
+            .vssut {
+                height: 40%;
+                width: 28%;
+                top: 0%;
+                float: left;
+                margin: 1%;
+
+
+            }
+
+            .jnv12 {
+                height: 40%;
+                width: 28%;
+                top: 0%;
+                margin: 1%;
+
+            }
+
+            .jnv10 {
+                height: 40%;
+                width: 28%;
+                top: 0%;
+                float: right;
+                margin: 1%;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .about {
+                font-size: 2.8rem;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            .vssut {
+                height: 30%;
+                width: 28%;
+                top: 0%;
+                float: left;
+                margin: 1%;
+
+
+            }
+
+            .jnv12 {
+                height: 30%;
+                width: 28%;
+                top: 0%;
+                margin: 1%;
+
+            }
+
+            .jnv10 {
+                height: 30%;
+                width: 28%;
+                top: 0%;
+                float: right;
+                margin: 1%;
+            }
+
+        }
+
+        @media only screen and (max-width:768px) {
+            .education {
+                background-color: darkblue;
+                width: 90vw;
+                height: 35vh;
+            }
+
+        }
+
+        @media only screen and (max-width:600px) {
+            .education {
+                background-color: darkblue;
+                width: 90vw;
+                height: 30vh;
+            }
+
+        }
+
+        @media only screen and (max-width:1200px) {
+            h3 {
+                font-size: 3rem;
+            }
+        }
+
+        @media only screen and (max-width:980px) {
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+
+
+        @media only screen and (max-width:768px) {
+            h3 {
+                font-size: 2rem;
+            }
+        }
+        @media only screen and (max-width:550px) {
+            h3 {
+                font-size: 1.5rem;
+            }
+            .education {
+                background-color: darkblue;
+                width: 90vw;
+                height: 25vh;
+            }
+        }
+        @media only screen and (max-width:400px) {
+            h3 {
+                font-size: 1rem;
+            }
+            .education {
+                background-color: darkblue;
+                width: 90vw;
+                height: 20vh;
+            }
+        }
+        
+footer{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="about">
+        <h1> About Myself</h1>
+        <hr>
+        <hr>
+    </div>
+    <h2>
+        My Education:
+    </h2>
+    <div class="education">
+
+        <div class="vssut"><img src="vssut.jpg" alt="vssut" class="vssutimg">
+            <h3>My B.Tech:<br>VSSUT,Burla</h3>
+        </div>
+        <div class="jnv12"><img src="jnv.jpg" alt="jnv" class="jnv12img">
+            <h3>My Intermediate:<br>JNV,Ganjam</h3>
+        </div>
+        <div class="jnv10"><img src="jnv.jpg" alt="jnv" class="jnv10img">
+            <h3>My matriculation:<br>JNV,Ganjam</h3>
+        </div>
+
+
+
+    </div>
+    <footer >&copy;Copyright all rights reserved</footer>
+</body>
+
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, black, blue);
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            background-color: black;
+            box-shadow: 2px 2px 6px burlywood;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        li {
+
+            font-size: 2rem;
+            padding: 1rem;
+            list-style-type: none;
+            margin-right: 3%;
+            border-right: 1px solid orange;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        .container {
+            width: 80%;
+            height: 600px;
+            display: grid;
+            margin: 3%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-row-gap: 1%;
+            grid-column-gap: 1.5%;
+            justify-content: center;
+
+        }
+
+        .d1 {
+            background-color: deeppink;
+            grid-column: 1/4;
+            font-size: 10rem;
+            color: yellow;
+            text-shadow: 3px 4px 5px black;
+            border: 4px solid antiquewhite;
+            animation: slide 3s 0.5s;
+        }
+        @keyframes slide{
+            0%{background-color: black; width:0%; font-size: 1rem;}
+            40%{background-color: pink; width:60% ;font-size:3rem}
+            100%{background-color:deeppink; width:100% }
+        }
+
+        .d2 {
+            background-color: gold;
+            font-size: 5rem;
+            color: brown;
+            text-shadow: 2px 2px 3px black;
+            border: 4px solid antiquewhite;
+            animation: flick2 3s 0.5s;
+        }
+        @keyframes flick2{
+            0%{background-color: black; }
+            50%{background-color:white; }
+            100%{background-color:gold;}
+        }
+
+        .d3 {
+            background-color: chartreuse;
+            font-size: 5rem;
+            text-shadow: 2px 2px 3px black;
+            color: red;
+            border: 4px solid antiquewhite;
+            animation: flick3 3s 0.5s;
+        }
+        @keyframes flick3{
+            0%{background-color: black; }
+            50%{background-color:white; }
+            100%{background-color: chartreuse;}
+        }
+
+        .d4 {
+            background-color:coral;
+            font-size: 5rem;
+            text-shadow: 2px 2px 3px black;
+            color: blueviolet;
+            border: 4px solid antiquewhite;
+            animation: flick4 3s 0.5s;
+        }
+        @keyframes flick4{
+            0%{background-color: black; }
+            50%{background-color:white; }
+            100%{background-color:coral;}
+        }
+        .d5 {
+            background-color:brown;
+            grid-column: 2/4;
+            font-size: 5rem;
+            text-shadow: 2px 2px 3px black;
+            border: 4px solid antiquewhite;
+            color:aquamarine;
+            animation: flick5 3s 0.5s;
+            animation-fill-mode: backwards;
+        }
+        @keyframes flick5{
+            0%{background-color: black; width:0% ;font-size: 0.5rem;}
+            50%{background-color:yellow; width:50% ;font-size:2.5rem}
+            100%{background-color:brown; width:100%}
+        }
+        i{
+            color:yellow;
+        }
+
+
+
+        @media only screen and (max-width:1100px)
+        {
+            .d1 {
+                background-color: deeppink;
+                grid-column: 1/4;
+                font-size: 80px;
+                color: yellow;
+                text-shadow: 3px 4px 5px black;
+                border: 4px solid antiquewhite;
+                animation: slide 3s 0.5s;
+            }
+            .d5 {
+                background-color:brown;
+                grid-column: 2/4;
+                height: 200px;
+                font-size: 40px;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                color:aquamarine;
+                animation: flick5 3s 0.5s;
+                animation-fill-mode: backwards;
+            }
+            .container {
+                width: 80%;
+                height: 560px;
+                display: grid;
+                margin: 3%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-row-gap: 1%;
+                grid-column-gap: 1.5%;
+                justify-content: center;
+    
+            }
+            .d2 {
+                background-color: gold;
+                font-size: 40px;
+                color: brown;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                animation: flick2 3s 0.5s;
+            }
+            .d3 {
+                background-color: chartreuse;
+                font-size: 40px;
+                text-shadow: 2px 2px 3px black;
+                color: red;
+                border: 4px solid antiquewhite;
+                animation: flick3 3s 0.5s;
+            }
+            .d4 {
+                background-color:coral;
+                font-size: 40px;
+                text-shadow: 2px 2px 3px black;
+                color: blueviolet;
+                border: 4px solid antiquewhite;
+                animation: flick4 3s 0.5s;
+            }
+        }
+        @media only screen and (max-width:870px)
+        {
+            .d1 {
+                background-color: deeppink;
+                grid-column: 1/4;
+                font-size: 60px;
+                color: yellow;
+                text-shadow: 3px 4px 5px black;
+                border: 4px solid antiquewhite;
+                animation: slide 3s 0.5s;
+            }
+            .d5 {
+                background-color:brown;
+                grid-column: 2/4;
+                height: 200px;
+                font-size: 30px;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                color:aquamarine;
+                animation: flick5 3s 0.5s;
+                animation-fill-mode: backwards;
+            }
+            .container {
+                width: 80%;
+                height: 520px;
+                display: grid;
+                margin: 3%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-row-gap: 1%;
+                grid-column-gap: 1.5%;
+                justify-content: center;
+    
+            }
+            .d2 {
+                background-color: gold;
+                font-size: 30px;
+                color: brown;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                animation: flick2 3s 0.5s;
+            }
+            .d3 {
+                background-color: chartreuse;
+                font-size: 30px;
+                text-shadow: 2px 2px 3px black;
+                color: red;
+                border: 4px solid antiquewhite;
+                animation: flick3 3s 0.5s;
+            }
+            .d4 {
+                background-color:coral;
+                font-size: 30px;
+                text-shadow: 2px 2px 3px black;
+                color: blueviolet;
+                border: 4px solid antiquewhite;
+                animation: flick4 3s 0.5s;
+            }
+        }
+        @media only screen and (max-width:678px)
+        {
+            .d1 {
+                background-color: deeppink;
+                grid-column: 1/4;
+                font-size: 50px;
+                color: yellow;
+                text-shadow: 3px 3px 3px black;
+                border: 4px solid antiquewhite;
+                animation: slide 3s 0.5s;
+            }
+            .d5 {
+                background-color:brown;
+                grid-column: 2/4;
+                height: 150px;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px black;
+                border: 4px solid antiquewhite;
+                color:aquamarine;
+                animation: flick5 3s 0.5s;
+                animation-fill-mode: backwards;
+            }
+            @keyframes flick5{
+                0%{background-color: black; width:0% ;font-size: 5px;}
+                50%{background-color:yellow; width:50% ;font-size:15px}
+                100%{background-color:brown; width:100%;font-size: 20px;}
+            }
+            .container {
+                width: 80%;
+                height: 420px;
+                display: grid;
+                margin: 3%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-row-gap: 1%;
+                grid-column-gap: 1.5%;
+                justify-content: center;
+    
+            }
+            .d2 {
+                background-color: gold;
+                font-size: 20px;
+                color: brown;
+                text-shadow: 1px 1px 2px black;
+                border: 4px solid antiquewhite;
+                animation: flick2 3s 0.5s;
+            }
+            .d3 {
+                background-color: chartreuse;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px black;
+                color: red;
+                border: 4px solid antiquewhite;
+                animation: flick3 3s 0.5s;
+            }
+            .d4 {
+                background-color:coral;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px black;
+                color: blueviolet;
+                border: 4px solid antiquewhite;
+                animation: flick4 3s 0.5s;
+            }
+        }
+        @media only screen and (max-width:480px)
+        {
+            .d1 {
+                background-color: deeppink;
+                grid-column: 1/4;
+                font-size: 60px;
+                color: yellow;
+                text-shadow: 3px 4px 5px black;
+                border: 4px solid antiquewhite;
+                animation: slide 3s 0.5s;
+            }
+            .d5 {
+                background-color:brown;
+                grid-column: 2/4;
+                height: 200px;
+                font-size: 30px;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                color:aquamarine;
+                animation: flick5 3s 0.5s;
+                animation-fill-mode: backwards;
+            }
+            .container {
+                width: 420px;
+                height: 520px;
+              display: grid;
+                margin: 3%;
+                grid-template-columns:1fr 1fr 1fr ;
+                grid-template-rows: 160px 160px 160px;
+                grid-row-gap: 1%;
+                grid-column-gap: 1.5%;
+                justify-content: center;
+    
+            }
+            .d2 {
+                background-color: gold;
+                font-size: 20px;
+                color: brown;
+                text-shadow: 1px 1px 2px black;
+                border: 4px solid antiquewhite;
+                animation: flick2 3s 0.5s;
+            }
+            .d3 {
+                background-color: chartreuse;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px black;
+                color: red;
+                border: 4px solid antiquewhite;
+                animation: flick3 3s 0.5s;
+            }
+            .d4 {
+                background-color:coral;
+                font-size: 20px;
+                text-shadow: 1px 1px 2px black;
+                color: blueviolet;
+                border: 4px solid antiquewhite;
+                animation: flick4 3s 0.5s;
+            }
+        }
+        @media only screen and (max-width:430px)
+        {
+            .d1 {
+                background-color: deeppink;
+                grid-column: 1/4;
+                font-size: 60px;
+                color: yellow;
+                text-shadow: 3px 4px 5px black;
+                border: 4px solid antiquewhite;
+                animation: slide 3s 0.5s;
+            }
+            .d5 {
+                background-color:brown;
+                grid-column: 2/4;
+                height: 115px;
+                font-size: 20px;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                color:aquamarine;
+                animation: flick5 3s 0.5s;
+                animation-fill-mode: backwards;
+            }
+            .container {
+                width: 370px;
+                height: 480px;
+              display: grid;
+                margin: 3%;
+                grid-template-columns:1fr 1fr 1fr;
+                grid-template-rows: 160px 130px 130px;
+                grid-row-gap: 1%;
+                grid-column-gap: 1.5%;
+                justify-content: center;
+    
+            }
+            .d2 {
+                background-color: gold;
+                font-size: 20px;
+                height: 106px;
+                color: brown;
+                text-shadow: 1px 1px 2px black;
+                border: 4px solid antiquewhite;
+                animation: flick2 3s 0.5s;
+            }
+            .d3 {
+                background-color: chartreuse;
+                font-size: 20px;
+                height: 106px;
+                text-shadow: 1px 1px 2px black;
+                color: red;
+                border: 4px solid antiquewhite;
+                animation: flick3 3s 0.5s;
+            }
+            .d4 {
+                background-color:coral;
+                font-size: 20px;
+                height: 106px;
+                text-shadow: 1px 1px 2px black;
+                color: blueviolet;
+                border: 4px solid antiquewhite;
+                animation: flick4 3s 0.5s;
+            }
+        }
+      
+        @media only screen and (max-width:385px)
+        {
+            html{
+                margin: opx;
+                padding: 0px;
+            }
+            .d1 {
+                background-color: deeppink;
+                grid-column: 1/4;
+                font-size: 40px;
+                height: 120px;
+                color: yellow;
+                text-shadow: 3px 4px 5px black;
+                border: 4px solid antiquewhite;
+                animation: slide 3s 0.5s;
+                margin-left: 1%;
+            }
+            .d5 {
+                background-color:brown;
+                grid-column: 2/4;
+                height: 145px;
+                font-size: 20px;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                color:aquamarine;
+                animation: flick5 3s 0.5s;
+                animation-fill-mode: backwards;
+            }
+            .container {
+               
+                width:300px ;
+                display: grid;
+                margin: 3%;
+                grid-template-columns:1fr 1fr 1fr ;
+                grid-template-rows: 160px 160px 160px;
+                grid-row-gap: 1%;
+                grid-column-gap: 1.5%;
+                justify-content: center;
+    
+            }
+            .d2 {
+                background-color: gold;
+                font-size: 20px;
+                color: brown;
+                height: 100px;
+                text-shadow: 1px 1px 2px black;
+                border: 4px solid antiquewhite;
+                animation: flick2 3s 0.5s;
+                margin-left: 1%;
+                margin-bottom: 5px;
+              
+                box-sizing: border-box;
+            }
+            .d3 {
+                background-color: chartreuse;
+                font-size: 20px;
+                height: 100px;
+                text-shadow: 1px 1px 2px black;
+                color: red;
+                border: 4px solid antiquewhite;
+                animation: flick3 3s 0.5s;
+                margin-left: 1%;
+                margin-bottom: 5px;
+              
+                box-sizing: border-box;
+            }
+            .d4 {
+                background-color:coral;
+                font-size: 20px;
+                height: 100px;
+                text-shadow: 1px 1px 2px black;
+                color: blueviolet;
+                border: 4px solid antiquewhite;
+                animation: flick4 3s 0.5s;
+                margin-left: 1%;
+                box-sizing: border-box;
+        
+                margin-bottom: 5px;
+            }
+        }
+        
+        @media only screen and (max-width:350px)
+        {
+            html{
+                margin: opx;
+                padding: 0px;
+            }
+            .d1 {
+                background-color: deeppink;
+                grid-column: 1/4;
+                font-size: 40px;
+                height: 120px;
+                color: yellow;
+                text-shadow: 3px 4px 5px black;
+                border: 4px solid antiquewhite;
+                animation: slide 3s 0.5s;
+                margin-left: 1%;
+            }
+            .d5 {
+                background-color:brown;
+                grid-column: 2/4;
+                height: 140px;
+                font-size: 17px;
+                text-shadow: 2px 2px 3px black;
+                border: 4px solid antiquewhite;
+                color:aquamarine;
+                animation: flick5 3s 0.5s;
+                animation-fill-mode: backwards;
+            }
+            .container {
+               
+                width:270px ;
+                display: grid;
+               margin: 3%;
+                grid-template-columns:1fr 1fr 1fr ;
+                grid-template-rows: 160px 160px 160px;
+                grid-row-gap: 1%;
+                grid-column-gap: 1.5%;
+                justify-content: center;
+                float: right;
+               
+    
+            }
+            .d2 {
+                background-color: gold;
+                font-size: 17px;
+                color: brown;
+                height: 100px;
+                text-shadow: 1px 1px 2px black;
+                border: 4px solid antiquewhite;
+                animation: flick2 3s 0.5s;
+                margin-left: 1%;
+                margin-bottom: 5px;
+              
+                box-sizing: border-box;
+            }
+            .d3 {
+                background-color: chartreuse;
+                font-size: 17px;
+                height: 100px;
+                text-shadow: 1px 1px 2px black;
+                color: red;
+                border: 4px solid antiquewhite;
+                animation: flick3 3s 0.5s;
+                margin-left: 1%;
+                margin-bottom: 5px;
+              
+                box-sizing: border-box;
+            }
+            .d4 {
+                background-color:coral;
+                font-size: 17px;
+                height: 100px;
+                text-shadow: 1px 1px 2px black;
+                color: blueviolet;
+                border: 4px solid antiquewhite;
+                animation: flick4 3s 0.5s;
+                margin-left: 1%;
+                box-sizing: border-box;
+        
+                margin-bottom: 5px;
+            }
+        }
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="d1">Here is Sibasis Badatya.</div>
+        <div class="d2">Web Developer(Beginner.)</div>
+        <div class="d3">Student at Vssut.</div>
+        <div class="d4">Lives in ganjam</div>
+        <div class="d5">For more details<br>You can go through<br>
+            <i>Contact</i> and <i>About </i>section
+        </div>
+    </div>
+    <footer >&copy;Copyright all rights reserved</footer>
+</body>
+
+</html>

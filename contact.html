@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0rem;
+            padding: 0rem;
+        }
+
+        .navbar {
+            background-color: black;
+            box-shadow: 2px 2px 6px burlywood;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        li {
+
+            font-size: 2rem;
+            padding: 1rem;
+            list-style-type: none;
+            margin-right: 3%;
+            border-right: 1px solid orange;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: blue;
+        }
+
+        body {
+            background-image: linear-gradient(to right, black, red);
+        }
+
+        .contact {
+            background-color: grey;
+            height: 70vh;
+            width: 90vw;
+            margin-left: 2%;
+            margin-top: 5%;
+            box-shadow: 4px 4px 6px brown;
+            border-radius: 10px;
+            border: 2px solid brown;
+            font-size: 65px;
+            color: blue;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        b {
+            color: red;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        i {
+            color: darkmagenta;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            font-size: 15px;
+            bottom: 0%;
+            position: absolute;
+            width: 100%;
+        }
+
+        @media only screen and (max-width:920px) {
+            .contact {
+                background-color: grey;
+                height: 65vh;
+                width: 85vw;
+                margin-left: 2%;
+                margin-top: 5%;
+                box-shadow: 2px 3px 4px brown;
+                border-radius: 10px;
+                border: 2px solid brown;
+                font-size: 55px;
+                color: blue;
+                text-shadow: 2px 2px 3px black;
+            }
+    
+        }
+        @media only screen and (max-width:840px) {
+            .contact {
+                background-color: grey;
+                height: 65vh;
+                width: 85vw;
+                margin-left: 2%;
+                margin-top: 5%;
+                box-shadow: 2px 3px 4px brown;
+                border-radius: 10px;
+                border: 2px solid brown;
+                font-size: 45px;
+                color: blue;
+                text-shadow: 2px 2px 3px black;
+            }
+    
+        }
+        @media only screen and (max-width:670px) {
+            .contact {
+                background-color: grey;
+                height: 80vh;
+                width: 80vw;
+                margin-left: 2%;
+                margin-top: 5%;
+                box-shadow: 2px 3px 4px brown;
+                border-radius: 10px;
+                border: 2px solid brown;
+                font-size: 45px;
+                color: blue;
+                text-shadow: 2px 2px 3px black;
+            }
+            a{
+                font-size: 35px;
+            }
+            a:hover{
+                font-size: 35px;
+            }
+    
+        }
+        @media only screen and (max-width:580px) {
+            .contact {
+                background-color: grey;
+                height: 55vh;
+                width: 85vw;
+                margin-left: 2%;
+                margin-top: 5%;
+                box-shadow: 2px 3px 4px brown;
+                border-radius: 10px;
+                border: 2px solid brown;
+                font-size:35px;
+                color: blue;
+                text-shadow: 2px 2px 2px black;
+            }
+            a{
+                font-size: 30px;
+            }
+            a:hover{
+                font-size: 30px;
+            }
+    
+        }
+        @media only screen and (max-width:460px) {
+            .contact {
+                background-color: grey;
+                height: 55vh;
+                width: 85vw;
+                margin-left: 2%;
+                margin-top: 5%;
+                box-shadow: 2px 3px 4px brown;
+                border-radius: 10px;
+                border: 2px solid brown;
+                font-size:35px;
+                color: blue;
+                text-shadow: 2px 2px 2px black;
+            }
+            a{
+                font-size: 25px;
+            }
+            a:hover{
+                font-size: 25px;
+            }
+    
+        }
+        @media only screen and (max-width:460px) {
+            .contact {
+                background-color: grey;
+                height: 65vh;
+                width: 85vw;
+                margin-left: 2%;
+                margin-top: 5%;
+                box-shadow: 2px 3px 4px brown;
+                border-radius: 10px;
+                border: 2px solid brown;
+                font-size:30px;
+                color: blue;
+                text-shadow: 2px 2px 1px black;
+            }
+            a{
+                font-size: 22px;
+            }
+            a:hover{
+                font-size: 22px;
+            }
+    
+        }
+        @media only screen and (max-width:350px) {
+            .contact {
+                background-color: grey;
+                height: 65vh;
+                width: 85vw;
+                margin-left: 2%;
+                margin-top: 5%;
+                box-shadow: 2px 3px 4px brown;
+                border-radius: 10px;
+                border: 2px solid brown;
+                font-size:30px;
+                color: blue;
+                text-shadow: 2px 1px 1px black;
+            }
+            a{
+                font-size: 19px;
+            }
+            a:hover{
+                font-size: 19px;
+            }
+    
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <div class="contact"> <b>You can contact me through:</b>
+        <br>
+        <i>* Phone No:</i>9114738467<br>
+        <i>*Whatsapp no:</i> 9114738467<br>
+        <i>*My facebook account link:</i><a
+            href="https://www.facebook.com/bhaskar.badatya.16">https://www.facebook.com/bhaskar.badatya.16</a>
+    </div>
+    <footer>&copy;Copyright all rights reserved</footer>
+</body>
+
+</html>
